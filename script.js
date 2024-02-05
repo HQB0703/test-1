@@ -65,12 +65,18 @@ if (screenWidth < 768) {
     // Large screens
     document.body.style.fontSize = '18px';
 }
+let flowerCount = 0;
+
 function createFlower() {
+    if (flowerCount >= 10) {
+        return; // Stop creating flowers if the maximum count is reached
+    }
+
     const flower = document.createElement('div');
     flower.classList.add('flower');
 
     // Randomly position the flower within the screen width
-    const randomX = Math.floor(Math.random() * window.innerWidth);
+    const randomX = Math.floor(Math.random() * window.innerWidth -20);
     flower.style.left = `${randomX}px`;
 
     // Append the flower to the body
@@ -79,13 +85,11 @@ function createFlower() {
     // Remove the flower after it falls off the screen
     flower.addEventListener('animationend', () => {
         flower.remove();
-        flowerCount--;
+        flowerCount--; // Decrease the flower count when a flower is removed
     });
+
+    flowerCount++; // Increase the flower count when a new flower is created
 }
 
 // Create flowers periodically
 setInterval(createFlower, 1500);
-
-function openLink() {
-    window.open('https://me.momo.vn/qr/ha-quoc-bi-Mqxk92vldo', '_blank');
-}

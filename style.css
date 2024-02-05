@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent vertical scroll */
+    overflow: hidden;
 }
 .header {
     font-family: "Nunito", sans-serif;
@@ -21,7 +21,7 @@ body {
     align-items: center; 
     z-index: 5;
     display: flex;
-    height: calc(100vh - 100px); /* Adjust this based on your design */
+    height: calc(100vh - 100px);
 }
 .animated-box {
     width: 100%;
@@ -32,7 +32,7 @@ body {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: red; /* Add this line to fill missing parts with red color */
+    background-color: red;
     animation: slide-up 2s ease-out;
     position: absolute;
     top: 100px;
@@ -64,14 +64,25 @@ body {
     transform: translate(-50%, -50%);
     display: flex;
     z-index: 2;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    animation: appear 2s ease-in-out;
 }
 
-.but2 {
-    font-family: "Nunito", sans-serif;
+
+.download-button {
     position: fixed;
+    width: 12%;
+    height: auto;
     top: 50%;
-    left: 78%;
+    left: 82.5%;
     z-index: 2; 
+}
+
+.download-button:hover path {
+    stroke: blue;
 }
 .button button {
     margin: 0 10px;
@@ -82,7 +93,9 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    display:block;
     transition: transform 0.3s ease-in-out;
+    outline: rgba(128, 128, 128, 0.137) 3px solid;
 }
 
 .button button:hover {
@@ -110,7 +123,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75vh;
+    width: 85%;
+    max-width: 400px;
     padding: 10px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -132,6 +146,7 @@ body {
 
 .popup-close {
     position: absolute;
+    font-family: "Nunito", sans-serif;
     top: 5px;
     right: 5px;
     cursor: pointer;
@@ -144,6 +159,7 @@ body {
     color: rgb(255, 255, 255);
     font-weight: bold;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 
