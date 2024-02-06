@@ -20,7 +20,10 @@ function hidePopup() {
     popup.style.display = 'none';
 }
 
-
+function openMess() {
+    const link = "https://www.facebook.com/messages/t/hq.bi.05/";
+    window.open(link, "_blank");
+}
 function ramdom() {
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
