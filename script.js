@@ -20,7 +20,8 @@ function hidePopup() {
     popup.style.display = 'none';
 }
 
-yesButton.addEventListener('click', () => {
+
+function ramdom() {
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
     
@@ -40,7 +41,7 @@ yesButton.addEventListener('click', () => {
     noButtonClickCount++;
     const scaleMultiplier = 1 + (noButtonClickCount * 0.5); // Increase scale by 0.5 for each click
     noButton.style.transform = `scale(${scaleMultiplier})`;
-});
+};
 
 box.addEventListener('animationend', () => {
     box.remove();

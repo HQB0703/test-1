@@ -54,7 +54,23 @@ body {
         transform: translateY(-100%);
     }
 }
+@keyframes ani {
+    0% { 
+        transform: translateX(100%);
+    }
+    
+    100% {
+        transform: translateX(-300%);
+    }
 
+}
+.draggable {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    position: fixed;
+  }
 /* Add styles for the buttons */
 .button {
     font-family: "Nunito", sans-serif;
@@ -69,6 +85,10 @@ body {
     align-items: center;
     gap: 10px;
     animation: appear 2s ease-in-out;
+}
+
+.qr:hover {
+    filter: grayscale(80%);
 }
 
 
@@ -144,8 +164,9 @@ body {
     }
 }
 
+
 .popup-close {
-    position: absolute;
+    position: fixed;
     font-family: "Nunito", sans-serif;
     top: 5px;
     right: 5px;
