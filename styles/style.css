@@ -138,12 +138,12 @@ body {
 
 /* Add styles for the "Yes" button */
 .button button.no {
-    background-color: green;
+    background-color: red;
 }
 
 /* Add styles for the "No" button */
 .button button.yes {
-    background-color: red;
+    background-color: green;
 }
 
 /* Add styles for the popup */
