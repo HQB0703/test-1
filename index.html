@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <title>Lì xì nè=))</title>
+    <meta property="og:title" content="Vào Nhận Lì Xì Ngay!" />
+    <meta property="og:description" content="Hoặc có thể lì xì cho tôi" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/driver.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="sctripts/driver.js"></script>
+    <meta property="og:image" name="og:image" content="https://congdankhuyenhoc.qltns.mediacdn.vn/449484899827462144/2023/12/29/loi-chuc-tet-duong-lich-3-1703836274189-17038362744011491854164.jpg" data-app="true">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header"id="head">
+        <h1>LÌ XÌ CHO TÔI</h1>
+    </div>
+
+    <div class="animated-box" id="box"></div>
+    <div class="animated-box duplicate" id="box2"></div>
+
+    <!-- Button -->
+    <div class="button">
+        <button class="no"onclick="ramdom()">Không bao giờ</button>
+        <button class="yes" onclick="showPopup()">Tất nhiên rồi!</button>
+    </div>
+    <div class="bg-ani"></div>
+    <div class="mess" onclick="openMess()"></div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <span class="popup-close" onclick="hidePopup()">X</span>
+
+        <a href="https://me.momo.vn/qr/ha-quoc-bi-Mqxk92vldo" target="_blank">
+            <img class="qr" src="img/qr.jpg" alt="QR Code" style="width: 80%; height:80%;">
+        </a>
+
+        <svg class="download-button" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" onclick="downloadQR()">
+            <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/>
+        </svg>
+    </div>
+
+    <script src="sctripts/script.js"></script>
+</body>
+</html>
