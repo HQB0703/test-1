@@ -6,9 +6,9 @@ function downloadQR() {
     link.click();}
 const box = document.getElementById('box');
 const box2 = document.getElementById('box2');
-const yesButton = document.querySelector('.button .yes');
-const noButton = document.querySelector('.button .no');
-let noButtonClickCount = 0;
+const NoButton = document.querySelector('.button .no');
+const YesButton = document.querySelector('.button .yes');
+let YesButtonClickCount = 0;
 
 function showPopup() {
     const popup = document.getElementById('popup');
@@ -36,14 +36,14 @@ function ramdom() {
         randomY = Math.floor(Math.random() * (screenHeight * 0.7)) - (screenHeight * 0.4);
     } while (
         // Check if the new position is too close to the "No" button
-        Math.abs(randomX - noButton.offsetLeft) < noButton.offsetWidth * 1.2 + 10 &&
-        Math.abs(randomY - noButton.offsetTop) < noButton.offsetHeight * 1.2 + 10
+        Math.abs(randomX - YesButton.offsetLeft) < YesButton.offsetWidth * 1.2 + 10 &&
+        Math.abs(randomY - YesButton.offsetTop) < YesButton.offsetHeight * 1.2 + 10
     );
 
-    yesButton.style.transform = `translate(${randomX}px, ${randomY}px) scale(1.2)`;
-    noButtonClickCount++;
-    const scaleMultiplier = 1 + (noButtonClickCount * 0.5); // Increase scale by 0.5 for each click
-    noButton.style.transform = `scale(${scaleMultiplier})`;
+    NoButton.style.transform = `translate(${randomX}px, ${randomY}px) scale(1.2)`;
+    YesButtonClickCount++;
+    const scaleMultiplier = 1 + (YesButtonClickCount * 0.5); // Increase scale by 0.5 for each click
+    YesButton.style.transform = `scale(${scaleMultiplier})`;
 };
 
 box.addEventListener('animationend', () => {
