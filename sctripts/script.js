@@ -110,7 +110,7 @@ const driverObj = driver({
             { element: '.header', popover: { title: 'Trang nhận và phát xì lì của tôi',    side: "left",
             align: 'end' } },
             { element: '.mess', popover: { title: 'Liên Hệ', description: 'Messsenger' } },
-            { element: '.button button.yes', popover: { title: 'Lì xì cho tôi', description: 'Khi ấn vào "Lì xì cho tôi" 1 QR code sễ xuất hiện, ấn vào qr hoặc quét nnos để lì xì.',     side: "bottom",
+            { element: '.button button.yes', popover: { title: 'Lì xì cho tôi', description: 'Khi ấn vào "Lì xì cho tôi" 1 QR code sễ xuất hiện, ấn vào qr hoặc quét nó để lì xì.',     side: "bottom",
             align: 'center' } },
             { element: '.footer', popover: {   title: 'Hoàn thành hướng dẫn' }},
         ]
